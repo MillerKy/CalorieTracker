@@ -1,7 +1,7 @@
 //Made by Ryan
 
 /**
- * Stores personal profile data such as name, age, height, body weight, and body fat percentage.
+ * Stores personal profile data such as name, age, height (in inches), body weight (lbs), and body fat percentage.
  */
 public class User {
     private String name;
@@ -18,17 +18,32 @@ public class User {
         this.bodyFatPercentage = bodyFatPercentage;
     }
  
-    // Getters
-    public String getName()              { return name; }
-    public int getAge()                  { return age; }
-    public double getHeightInches()      { return heightInches; }
-    public double getBodyWeightLbs()     { return bodyWeightLbs; }
-    public double getBodyFatPercentage() { return bodyFatPercentage; }
+    // Getters for personal data
+    public String getName() { 
+        return name; 
+    }
+    public int getAge() { 
+        return age;
+    }
+    public double getHeightInches() { 
+        return heightInches; 
+    }
+    public double getBodyWeightLbs() { 
+        return bodyWeightLbs; 
+    }
+    public double getBodyFatPercentage() { 
+        return bodyFatPercentage; 
+    }
  
-    // Setters
-    public void setBodyWeightLbs(double bodyWeightLbs) { this.bodyWeightLbs = bodyWeightLbs; }
-    public void setBodyFatPercentage(double bfp)       { this.bodyFatPercentage = bfp; }
- 
+    // Setters for weight in lbs and body fat %
+    public void setBodyWeightLbs(double bodyWeightLbs) {
+        this.bodyWeightLbs = bodyWeightLbs; 
+    }
+    public void setBodyFatPercentage(double bfp) { 
+        this.bodyFatPercentage = bfp; 
+    }
+
+    //toString method to display user information to be used for output
     @Override
     public String toString() {
         return String.format("User: %s | Age: %d | Height: %.1f in | Weight: %.1f lbs | Body Fat: %.1f%%",
