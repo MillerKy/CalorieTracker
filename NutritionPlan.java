@@ -53,6 +53,8 @@ public class NutritionPlan {
                  break;
             case MAINTAIN: dailyCalorieGoal = maintenanceCalories;                   
                  break;
+            default:
+                 throw new IllegalArgumentException("Weight goal unknown: " + weightGoal);
         }
  
         // Macro breakdown from total calories (25% of calories from fat, 45% from carbs )
@@ -80,7 +82,7 @@ public class NutritionPlan {
     public double getRatePerWeekLbs() { 
         return ratePerWeekLbs; 
     }
-    // used to display the Nutrition Plan's contents (WeightGoal, Maintenance, Daily Goal,
+    // returns a string formatting the Nutrition Plan's contents (WeightGoal, Maintenance, Daily Goal,
     // Fat Goal, and Carb Goal)
     @Override
     public String toString() {
