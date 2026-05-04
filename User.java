@@ -43,10 +43,10 @@ public class User {
         this.bodyFatPercentage = bfp; 
     }
 
-    //toString method to display user information to be used for output
+    //returns a string of formatted user information which includes name, age, height, weight, and body fat
     @Override
     public String toString() {
-        return String.format("User: %s | Age: %d | Height: %.1f in | Weight: %.1f lbs | Body Fat: %.1f%%",
+        return String.format("Name: %s | Age: %d | Height: %.1f in | Weight: %.1f lbs | Body Fat: %.1f%%",
                 name, age, heightInches, bodyWeightLbs, bodyFatPercentage);
     }
 }
