@@ -1,11 +1,12 @@
+//Made by Kyle
 
 public class FoodItem {
-
 	//Represents a single food entry with attributes for name, meal type (breakfast, lunch, dinner, snack), and the calories, protein, fat, and carbs
 	
 	private String name;
 	private String meal;
 	private int cal;
+	private int protein;
 	private int fat;
 	private int carbs;
 	
@@ -16,22 +17,23 @@ public class FoodItem {
 		name = "Food Item";
 		meal = "snack";
 		cal = 0;
+		protein = 0;
 		fat = 0;
 		carbs = 0;
-		
-		
 	}
 	
-	public FoodItem(String n, String m, int cl, int f, int cb) {
+	public FoodItem(String n, String m, int cl, int p, int f, int cb) {
 		//specific food items constructor
 		name = n;
 		meal = m;
 		cal = cl;
+		protein = p;
 		fat = f;
 		carbs = cb;
 	}
 	
-	//------------Set and Get methods----------------------
+	//Set and Get methods
+	//I really hope you know what these do
 	public String getName() {
 		return name;
 	}
@@ -56,6 +58,14 @@ public class FoodItem {
 		cal = c;
 	}
 	
+	public int getProtein() {
+		return protein;
+	}
+	
+	public void setProtein(int p) {
+		protein = p;
+	}
+	
 	public int getFat() {
 		return fat;
 	}
@@ -74,7 +84,7 @@ public class FoodItem {
 	
 	//To String: sort of like a nutritional label
 	public String toString() {
-		return ("Name: " + name + "\nMeal Type: " + meal + "\nCalories: " + cal + "\nFat: " + fat + "g\nCarbs: " + carbs);
+		return ("Name: " + name + "\nMeal Type: " + meal + "\nCalories: " + cal + "\nProtein: " + protein + "g\nFat: " + fat + "g\nCarbs: " + carbs + "g");
 	}
 	
 }
