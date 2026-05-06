@@ -28,7 +28,9 @@ public class MealLog {
         return entries;
     }
 
-    public String getDate() { return date; }
+    public String getDate() { 
+    	return date; 
+    }
 
     // Running totals
     public int getTotalCalories() {
