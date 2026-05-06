@@ -42,7 +42,8 @@ public class NutritionPlan {
         // 3500 calories ≈ 1 lb of fat
         double weeklyCalAdjustment = ratePerWeekLbs * 3500;
         double dailyAdjustment     = weeklyCalAdjustment / 7.0;
- 
+
+        //Your daily calorie goal based on your selection to lose, gain, or maintain your weight
         switch (weightGoal) {
             case LOSE:     dailyCalorieGoal = maintenanceCalories - dailyAdjustment; break;
             case GAIN:     dailyCalorieGoal = maintenanceCalories + dailyAdjustment; break;
