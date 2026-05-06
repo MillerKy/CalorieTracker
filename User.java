@@ -1,7 +1,7 @@
 //Made by Ryan
 
-/**
- * Stores personal profile data such as name, age, height (in inches), body weight (lbs), and body fat %.
+/*
+ * Stores personal profile data such as name, age, height (in inches), body weight (lbs), and body fat percentage.
  */
 public class User {
     private String name;
@@ -46,7 +46,7 @@ public class User {
     //returns a string of formatted user information which includes name, age, height, weight, and body fat
     @Override
     public String toString() {
-        return String.format("Name: %s | Age: %d | Height: %.1f in | Weight: %.1f lbs | Body Fat: %.1f%%",
+        return String.format("User: %s | Age: %d | Height: %.1f in | Weight: %.1f lbs | Body Fat: %.1f%%",
                 name, age, heightInches, bodyWeightLbs, bodyFatPercentage);
     }
 }
