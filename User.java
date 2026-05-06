@@ -1,7 +1,7 @@
 //Made by Ryan
 
 /**
- * Stores personal profile data such as name, age, height (in inches), body weight (lbs), and body fat percentage.
+ * Stores personal profile data such as name, age, height (in inches), body weight (lbs), and body fat %.
  */
 public class User {
     private String name;
