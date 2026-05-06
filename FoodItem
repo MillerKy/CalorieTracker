@@ -33,7 +33,6 @@ public class FoodItem {
 	}
 	
 	//Set and Get methods
-	//I really hope you know what these do
 	public String getName() {
 		return name;
 	}
